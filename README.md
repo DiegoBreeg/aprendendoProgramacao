@@ -1,7 +1,7 @@
 # aprendendoProgramacao
 Este projeto tem como finalidade o estudo e pesquisa das linguagens de programação e desenvolvimento de sistemas
 
-gitHub é a ferramente perfeita para os desenvolvedores pois proporciona um ambiente controlado de desenvolvimento, este ambiente permine a manipulação de arquivos por uma equipe inteira sem que haja o risco de alterações perdidas, ou mesmo desencontradas.
+gitHub é a ferramenta perfeita para os desenvolvedores pois proporciona um ambiente controlado de desenvolvimento, este ambiente permine a manipulação de arquivos por uma equipe inteira sem que haja o risco de alterações perdidas, ou mesmo desencontradas.
 
 - 👋 Hi, I’m @DiegoBreeg
 - 👀 I’m interested in learn all about tecnology and programing

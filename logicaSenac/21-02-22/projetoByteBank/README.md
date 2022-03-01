@@ -1,0 +1,1 @@
+Neste programa aprendo a separar as classes, ou objetos, em arquivos .js diferentes e inporta-los no index via json.

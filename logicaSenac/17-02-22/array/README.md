@@ -1,0 +1,3 @@
+Veja a seguinte série: 1, 4, 4, 2, 5, 5, 3, 6, 6, 4, 7, 7, ...
+ Escreva um programa que seja capaz de gerar os N termos dessa 
+ série. Esse número N deve ser lido do teclado.

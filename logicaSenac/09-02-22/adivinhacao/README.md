@@ -1,0 +1,1 @@
+Programa deve criar um número aleatório de 1 a 10 e pedir que o usuário acerte este número

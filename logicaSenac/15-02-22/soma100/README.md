@@ -1,0 +1,1 @@
+O programa deve somar todos os termos de 1 a 100 e retornar o valor.

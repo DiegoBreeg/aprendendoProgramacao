@@ -1,11 +1,19 @@
-const form = document.querySelector('#submit')
+import {capturaPreparoPizza, capturaPreparoLanche, capturaPreparoSalgadinho,} from "./captura.js";
+import {Cliente} from './cliente';
 
-form.addEventListener('click', function(e){
+const cliente = new Cliente();
 
-    e.preventDefault();
 
-    const name = document.querySelector('#name')
-    const value = name.value;
+pizza.addEventListener('click', capturaPreparoPizza);
+lanche.addEventListener('click', capturaPreparoLanche);
+salgadinho.addEventListener('click', capturaPreparoSalgadinho);
+submit.addEventListener('click', criaPedido);
 
-    console.log(value);
-})
+
+
+function criaPedido(){    
+    cliente.pegaNome();
+    console.log(cliente);
+}
+
+

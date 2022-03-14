@@ -1,5 +1,5 @@
 {
-  "name": "lanchesv3",
+  "name": "teste",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -9,5 +9,4 @@
   "author": "",
   "license": "ISC",
   "type": "module"
-  
 }

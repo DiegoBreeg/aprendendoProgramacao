@@ -1,8 +1,10 @@
-import {criaPedido} from "./pedido.js";
+import {pedido} from "./pedido.js";
 //import {produto} from './main.js';
 import {mudaItem} from './main.js'
 
-function capturaPreparoPizza() {  
+function capturaPreparoPizza() {
+    console.log(`[captura] capturaPreparoPizza() você clicou em pizza`);
+    console.log(`[captura] capturaPreparoPizza() {Injetando HTML}`);
     var preparo = document.querySelector('#preparo');
     preparo.innerHTML =
         `<p>Selecione o preparo da sua <strong>Pizza</strong></p>`;
@@ -23,12 +25,14 @@ function capturaPreparoPizza() {
             <option value='tomate'>Tomate</option>
             <option value='branco'>Molho Branco</option>
             <option value='cremoso'>Cremoso</option>
-        </select>`
-        mudaItem('pizza');           
-        console.log(`[captura] capturaPreparoPizza() send 'pizza' to mudaItem() `);
+        </select>`        
+        mudaItem('pizza');
+        console.log(`[captura] capturaPreparoPizza() {/Injetando HTML}`);
     }
     
-function capturaPreparoLanche() {  
+function capturaPreparoLanche() { 
+    console.log(`[captura] capturaPreparoLanche() você clicou em lanche`);
+    console.log(`[captura] capturaPreparoLanche() {Injetando HTML}`); 
     var preparo = document.querySelector('#preparo');
     preparo.innerHTML =
         `<p>Selecione o preparo do seu <strong>Lanche</strong></p>`;
@@ -52,10 +56,12 @@ function capturaPreparoLanche() {
             <option value='catupiry'>Catupiry</option>
         </select>`
         mudaItem('lanche');
-        console.log(`[captura] capturaPreparoLanche() send 'lanche' to mudaItem() `);
+        console.log(`[captura] capturaPreparoLanche() {/Injetando HTML}`);
     }
     
-function capturaPreparoSalgadinho() {  
+function capturaPreparoSalgadinho() {
+    console.log(`[captura] capturaPreparoSalgadinho() você clicou em salgadinho`);
+    console.log(`[captura] capturaPreparoSalgadinho() {Injetando HTML}`);
     var preparo = document.querySelector('#preparo');
     preparo.innerHTML = '<p>Selecione o preparo de seu <strong>Salgadinho</strong></p>';
     preparo.innerHTML +=
@@ -77,7 +83,7 @@ function capturaPreparoSalgadinho() {
             <option value='palmito'>Palmito</option>
         </select>`
         mudaItem('salgadinho');
-        console.log(`[captura] capturaPreparoSalgadinho() send 'salgadinho' to mudaItem() `);
+        console.log(`[captura] capturaPreparoSalgadinho() {/Injetando HTML}`);
     }
 
 export {capturaPreparoPizza, capturaPreparoLanche, capturaPreparoSalgadinho};

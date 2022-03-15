@@ -1,0 +1,19 @@
+
+body {
+    background-color: #95bcf7;
+}
+h1 {
+    color:#5f0000;
+    background-color: #df7b7b;
+}
+
+ul {
+border-style: double;
+border-color: #000000;
+border-width: 1px;
+}
+
+li {
+    color:#800000;
+    background-color:rgb(104, 202, 169);    
+}

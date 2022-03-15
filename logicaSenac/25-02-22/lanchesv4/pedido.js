@@ -2,20 +2,21 @@ import {capturaPreparoPizza, capturaPreparoLanche, capturaPreparoSalgadinho} fro
 import {mudaItem} from './main.js';
 
 
-function criaPedido (nome, valor, validade, peso, preparo){  
+function pedido (item, valor, validade, peso, preparo){ 
     return {           
-        nome: nome,
         item,
-        valor: valor,
-        validade: validade,
-        peso: peso,
-        preparo: preparo
+        valor,
+        validade,
+        peso,
+        preparo,
     }
 }
 
+    
 
 
 
 
 
-export {criaPedido};
+
+export {pedido};

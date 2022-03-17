@@ -1,0 +1,10 @@
+{
+    "nome": "Diego",
+    "idade": 26,
+    "esta_trabalhando": null,
+    "detalhes_profissao": {
+        "profissao": "desempregado",
+        "pretencao": "tecnologia, programação"
+    },
+    "hobbies": ["programar", "jogar valorant", "assistir série"]
+}

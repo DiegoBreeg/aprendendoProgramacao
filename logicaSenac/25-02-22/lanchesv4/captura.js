@@ -1,6 +1,6 @@
-import {pedido} from "./pedido.js";
-//import {produto} from './main.js';
 import {mudaItem} from './main.js'
+
+
 
 function capturaPreparoPizza() {
     console.log(`[captura] capturaPreparoPizza() você clicou em pizza`);

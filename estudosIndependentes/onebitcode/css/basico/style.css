@@ -1,0 +1,22 @@
+
+body {
+    font-family: 'Comic Sans', cursive;
+    background-color: #fff0f0;
+    margin: 100px;
+    width: 70%;
+    height: 100%;
+    margin: 0px auto 0px auto;
+}
+h1 {    
+    color:#0c0c14;    
+    background-color:#b0b0b1;
+    border: 6px outset #5e6772;    
+}
+
+li {
+    background-color: #000000;
+    margin-right: 100%;
+    margin-top: auto;
+    cursor: pointer;
+}
+

@@ -1,8 +1,13 @@
 import {capturaPreparoPizza, capturaPreparoLanche, capturaPreparoSalgadinho} from "./captura.js";
 import {pedido} from "./pedido.js";
 
+
 var item = 'item';
 const cliente = [];
+
+function mudaItem(produto){
+    item = produto;
+}
 
 
 
@@ -19,15 +24,13 @@ function criaCliente() {
 
 _submit.addEventListener('click', anotaPedido);
 
-function mudaItem(produto){
-    item = produto; 
-}
+
 
 
 
 
 function anotaPedido(){    
-
+    
     if(item == 'pizza') {
         var recheioPizza = document.querySelector('#recheioPizza').value;
         var bordaPizza = document.querySelector('#bordaPizza').value;

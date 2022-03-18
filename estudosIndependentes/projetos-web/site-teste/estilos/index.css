@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&family=Open+Sans&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #f0f2f5;
+    
+}
+.menu {
+    list-style-type: none;
+    padding: 0;
+    background-color:rgb(37, 24, 24);
+}
+.menu li {
+    display:inline;
+
+}
+.menu li a {
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color .6s;  
+}
+.menu li a:hover {
+    background-color:rgb(33, 96, 179);
+}
+
+.container {    
+    background-color:red;
+    margin-left: 50px;  
+}

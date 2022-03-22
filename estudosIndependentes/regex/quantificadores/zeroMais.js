@@ -6,8 +6,3 @@ const regex = /fogo*/gi; //zero ou mais pega todoas as ocorrências
 console.log(texto1.match(regex));
 console.log(texto2.match(regex));
 
-const texto3 = '22:06 Kill: 2 3 7: Isgalamido killed Mocinha by MOD_ROCKET_SPLASH'
-const killer = texto3.match(/\s\d+:\d+ kill: \d \d \d: (\w+)/i);
-console.log(killer);
-
-

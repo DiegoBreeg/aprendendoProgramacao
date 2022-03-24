@@ -23,7 +23,7 @@ let acumuladoContado = killer.reduce((contando, el) => {
   }
   return contando
 }, new Map())
-console.log(acumuladoContado)
+console.log(typeof acumuladoContado)
 
 
 //let arr = [ 'a', 'b', 'c', 'c', 'b', 'd' ]

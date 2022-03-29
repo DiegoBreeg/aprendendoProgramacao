@@ -17,11 +17,17 @@ console.log(productList);
 
 
 
-const customer = [
-    {name: 'Diego'},
-    {name: 'Thiago'},
-    {name: 'Rodrigo'}
-]
 
-const pessoas = customer.reduce( (accumulator, {name}) => accumulator + name.length,0);
-console.log(pessoas);
+
+
+const items = [
+    {nome: 'pizza', valor: 2.50},
+    {nome: 'lanche', valor: 3.50},
+    {nome: 'salgadinho', valor: 1.50}
+];
+
+const total = items.reduce((accumulator, {valor}) => accumulator + valor, 0)
+console.log(total);
+
+
+

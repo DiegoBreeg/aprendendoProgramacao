@@ -9,12 +9,27 @@ book['fat'];
 
 
 
+function superior() {
+    var varsuperior = 'superior';
+    console.log(varsuperior);
+    console.log(varintermediaria);
+    console.log(varinferior);
+    
+    function intermediaria() {
+        var varintermediaria = 'intermediaria';
+        console.log(varsuperior);
+        console.log(varintermediaria);
+        console.log(varinferior);
+        
+        function inferior() {
+            var varinferior = 'inferior';
+            console.log(varsuperior);
+        console.log(varintermediaria);
+        console.log(varinferior);
+            
+        
+        }
+    
+    }
 
-let killerScore = ['diego', 'diego', 'thiago', 'rodrigo']
-let killer = killerScore.filter((ell, index) => killerScore.indexOf(ell) == index);
-let resultado = killer.map( ell => {
-     //let data = killerScore.reduce((acc, ell2) => acc = ell2 == ell? acc + 1: acc + 0 ,0);
-     let data = killerScore.reduce((acc, ell2) => ell2 == ell? acc + 1: acc + 0 ,0);
-     return [ell, data];
-})
-console.log(resultado)
+}

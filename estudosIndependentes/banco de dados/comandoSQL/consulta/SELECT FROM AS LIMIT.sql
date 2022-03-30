@@ -1,0 +1,3 @@
+USE diegodb;
+
+SELECT CPF, NOME, ENDERECO1 AS ENDERECO_PRINCIPAL FROM tbcliente limit 5;

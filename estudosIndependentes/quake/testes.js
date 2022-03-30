@@ -4,6 +4,7 @@ var txt = fs.readFileSync('./Quake.txt', 'utf8');
 const linha = txt.split('\n');
 const killer = [];
 
+
 for(i = 0; i <= linha.length; i++) {
     
     if(/kill:/gi.test(linha[i])){
@@ -13,17 +14,33 @@ for(i = 0; i <= linha.length; i++) {
     }
 }
 
+
+
+
+let killer2 = killer.filter((ell, index) => killer.indexOf(ell) == index);
+let resultado = killer2.map(ell => {
+     let data = killer.reduce((acc, ell2) => acc = ell2 == ell? acc + 1: acc + 0 ,0);
+     return [ell, data];
+})
+console.log(resultado)
+
+
+
+
+
+
+
 //let arr = [ 'a', 'b', 'c', 'c', 'b', 'd' ]
 
-let acumuladoContado = killer.reduce((contando, el) => {
-  if (contando.has(el)) {
-    contando.set(el, contando.get(el) + 1)
-  } else {
-    contando.set(el, 1)
-  }
-  return contando
-}, new Map())
-console.log(typeof acumuladoContado)
+//let acumuladoContado = killer.reduce((contando, el) => {
+  //if (contando.has(el)) {
+    //contando.set(el, contando.get(el) + 1)
+  //} else {
+    //contando.set(el, 1)
+  //}
+  //return contando
+//}, new Map())
+//console.log(typeof acumuladoContado)
 
 
 //let arr = [ 'a', 'b', 'c', 'c', 'b', 'd' ]

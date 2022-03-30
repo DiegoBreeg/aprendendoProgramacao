@@ -10,27 +10,11 @@ book['fat'];
 
 
 
-const client = {
-    nome: 'Diego',
-    sacola: [],
-    calculaValorTotal() {
-        return client.sacola.reduce((accumulator, {valor}) => accumulator + valor, 0)
-    }
-}
-
-const pizza = {produto: 'pizza', valor: 2.50, ingredientes: []};
-const lanche = {produto: 'lanche', valor: 3.50, ingredientes: []};
-const salgadinho = {produto: 'salgadinho', valor: 3, ingredientes: []};
-
-client.sacola.push(pizza);
-client.sacola.push(lanche);
-client.sacola.push(salgadinho);
-
-console.log(client);
-console.log(client.calculaValorTotal());
-
-
-const teste = {sacola:[{ingredientes: []}]}
-
-
-teste.sacola.push()
+let killerScore = ['diego', 'diego', 'thiago', 'rodrigo']
+let killer = killerScore.filter((ell, index) => killerScore.indexOf(ell) == index);
+let resultado = killer.map( ell => {
+     //let data = killerScore.reduce((acc, ell2) => acc = ell2 == ell? acc + 1: acc + 0 ,0);
+     let data = killerScore.reduce((acc, ell2) => ell2 == ell? acc + 1: acc + 0 ,0);
+     return [ell, data];
+})
+console.log(resultado)

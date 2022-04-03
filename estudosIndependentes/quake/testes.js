@@ -1,7 +1,4 @@
 const fs = require('fs');
-const { format } = require('path');
-const { arrayBuffer } = require('stream/consumers');
-const { isNumber } = require('util');
 var txt = fs.readFileSync('./Quake.txt', 'utf8');
 
 const linha = txt.split('\n');

@@ -1,0 +1,1 @@
+SELECT * FROM tbproduto WHERE NOME LIKE '%LIGHT%'

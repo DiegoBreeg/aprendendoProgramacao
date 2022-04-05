@@ -1,0 +1,3 @@
+SELECT *
+FROM tbcliente
+WHERE year(DATA_NASCIMENTO) = 1995

@@ -1,7 +1,7 @@
 let numbers = '3.0 4.0 5.2';
 
 numbers = numbers.split(/\s/gi); //transforma a string dos dados em um array com elementos correspondentes
-numbers = numbers.map((ell) => parseFloat(ell));// converte as strings em float
+numbers = numbers.map((ell) => +ell);// converte as strings em float
 
 let [a, b, c] = [...numbers] //desestrutura o array com os valores convertidos e passa para as variáveis
 

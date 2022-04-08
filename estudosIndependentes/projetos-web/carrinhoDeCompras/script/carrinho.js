@@ -14,11 +14,12 @@ function criaCarrinho() {
     let produtos = [];
     let valorPago = 0;
 
-    let calculaPreco = function() {
-        let precoTotal = this.produtos.reduce((acc, {preco}) => {return acc += preco},0)
+    function calculaPreco() {
+        let precoTotal = this.produtos.reduce((acc, {preco}) => {return acc += preco},0);
         console.log(precoTotal);
     }
-    let calculaTroco = function() {
+
+    function calculaTroco() {
         let troco = this.valorPago - this.produtos.reduce((acc, {preco}) => {return acc += preco},0);
         console.log(troco);
     }

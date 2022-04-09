@@ -5,23 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./script/carrinho.js" defer></script>
+    <style>
+        #console {
+            background-color: rgb(136, 148, 163);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            padding: 0px;
+            border-top: 10px;
+            border-left: 10px;
+            border-style:inset;
+            border-color: rgb(193, 194, 196);            
+            width: 450px;
+            height: 600px;
+        }        
+        .painel{           
+            border: solid;
+            margin:auto;            
+            display:block;
+            width: 500px;
+            height: 150px;         
+        }
+    </style>
 </head>
-<body>
-    <div id="entrada">
-        <from>
-            <input type="button" value="Pizza" id="pizza">
-            <input type="button" value="Lanche" id="lanche">
-            <input type="button" value="Salgadinho" id="salgadinho">
-        </from>
-        <div id="crud">
-            
-        </div>
-        <form>
-            <p>Insira o valor Pago</p>
-            <input type="text" id="paidOut">
-            <input type="button" value="Enviar" id="button"> 
-        </form>
+<body>    
+    <from class="painel">
+        <input type="button" value="Pizza" id="pizza">
+        <input type="button" value="Lanche" id="lanche">
+        <input type="button" value="Salgadinho" id="salgadinho">
+        <p>Insira o valor Pago</p>
+        <input type="text" id="paidOut">
+        <input type="button" value="Enviar" id="button"> 
+    </form>
+    <div id="console">            
+    </div>
 
-    </div>    
+       
 </body>
 </html>

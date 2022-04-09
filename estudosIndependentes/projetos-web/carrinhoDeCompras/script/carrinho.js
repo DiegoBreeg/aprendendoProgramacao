@@ -13,16 +13,13 @@ function criaCarrinho() {
     let cliente = '';
     let produtos = [];
     let valorPago = 0;
-
     function calculaPreco() {
         let precoTotal = this.produtos.reduce((acc, {preco}) => {return acc += preco},0);
-        console.log(precoTotal);
-    }
+        console.log(precoTotal);    }
 
     function calculaTroco() {
         let troco = this.valorPago - this.produtos.reduce((acc, {preco}) => {return acc += preco},0);
-        console.log(troco);
-    }
+        console.log(troco);    }
 
     return {cliente, produtos, valorPago, calculaPreco, calculaTroco}
 }
@@ -31,7 +28,6 @@ function criaProduto(nome, preco, peso) {
     this.nome = nome;
     this.preco = preco;
     this.peso = peso;
-
     return {nome, preco, peso}
 }
 

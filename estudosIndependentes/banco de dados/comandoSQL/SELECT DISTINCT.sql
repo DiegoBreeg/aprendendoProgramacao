@@ -1,0 +1,2 @@
+
+SELECT DISTINCT EMBALAGEM, TAMANHO FROM tabela_de_produtos

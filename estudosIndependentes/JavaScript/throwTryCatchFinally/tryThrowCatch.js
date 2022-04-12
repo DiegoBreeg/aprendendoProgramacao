@@ -11,7 +11,7 @@ let verifica = x => {
     }
     catch(error) {
         x = error * (-1);
-        console.log('x é negativo, seu sinal será invertido');        
+        console.log('x é negativo, seu sinal será invertido');
     }
     finally {
         console.log(x);

@@ -1,4 +1,5 @@
-class Microfone{
+//classe comu: classe classificadora!
+class Microfone_classificadora{
     constructor(cor = 'preto'){
         this.cor = cor;
         this.is_on = true;
@@ -15,7 +16,7 @@ class Microfone{
 
 }
 
-const microfone = new Microfone();
-console.log(microfone.cor.toUpperCase());
-microfone.toggle_on_off();
-microfone.toggle_on_off();
+const microfone_classe_classificado = new Microfone_classificadora();
+console.log(microfone_classe_classificado);
+microfone_classe_classificado.toggle_on_off();
+

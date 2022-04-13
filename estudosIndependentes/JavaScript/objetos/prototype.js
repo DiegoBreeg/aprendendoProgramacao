@@ -1,23 +1,19 @@
-//criação de objetos por prototype
-function Microfone(cor = 'preto') {
+//criação de objetos por prototype: factory classificadora!
+function cria_microfone_classificadora(cor = 'preto') {
     this.cor = cor;
-    this.toggle_on_off = true;
+    this.is_on = true;
 }
 
-Microfone.prototype.toggle_on_off = function (){
-    if(this.is_on) {
+cria_microfone_classificadora.prototype.toggle_on_off = function (){
+    if(this.is_on) 
         console.log("desligar");
-    } else {
+     else 
         console.log("ligar");
+
+    this.is_on = !this.is_on;
 }
-is_on = !is_on;
-}
 
-const microfone = new Microfone();
-const microfone2 = new Microfone('branco');
+const microfone_classificado = new cria_microfone_classificadora();
 
-
-console.log(microfone);
-console.log(microfone2);
-
-microfone2.toggle_on_off();
+console.log(microfone_classificado);
+microfone_classificado.toggle_on_off();

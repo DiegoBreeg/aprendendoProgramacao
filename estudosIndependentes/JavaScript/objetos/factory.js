@@ -1,21 +1,20 @@
-//criando um objeto factory
+//criando um objeto factory: factory objetificadora!
 
-function cria_microfone(cor){
-    let is_on = true;    
+function cria_microfone_objetificadora(cor){
+    this.is_on = true;
 
     function toggle_on_off(){
-        if(is_on) {
+        if(this.is_on)
             console.log("desligar");
-        } else {
+        else 
             console.log("ligar");
+        
+        this.is_on = !this.is_on;
     }
-    is_on = !is_on;
-    }
-    return {cor, toggle_on_off}
+    return {cor, is_on, toggle_on_off}
 }
 
+const microfone_objetificado_branco = cria_microfone_objetificadora('branco');
 
-const microfone_preto = cria_microfone('preto');
-const microfone_branco = cria_microfone('branco');
-console.log(microfone_preto);
-console.log(microfone_branco);
+console.log(microfone_objetificado_branco);
+microfone_objetificado_branco.toggle_on_off();

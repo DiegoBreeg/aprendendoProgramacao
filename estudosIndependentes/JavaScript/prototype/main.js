@@ -13,11 +13,3 @@ console.log(minhaSala.alunos);
 
 
 
-
-var factory = (prop) => {        
-   function metod() {console.log('isto é um método do objeto')}
-    return {metod, prop}
-}
-
-
-

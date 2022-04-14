@@ -6,10 +6,7 @@ SalaAula.prototype = {
         this.alunos.push(aluno)
     }
 }
+
 const minhaSala = new SalaAula(['João', 'Maria'])
 minhaSala.adicionarAluno('Pedro');
 console.log(minhaSala.alunos);
-
-
-
-

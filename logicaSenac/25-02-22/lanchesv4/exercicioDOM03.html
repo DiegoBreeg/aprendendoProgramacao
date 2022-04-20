@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <section class="exe" id="1">
+        <p><strong>Exercício 1</strong> Crie um elemento input do tipo texto e um elemento label. 
+            Ao elemento input deve
+            ser adicionado um evento denominado "onblur" <br> 
+            (disparado quando o foco do elemento é retirado) que chame uma função javascript que leia 
+            o valor contido no input e o coloque no elemento label.</p>
+        <div> 
+           <input type="text" name="campo1" onblur="exportaTexto(this);">
+           <label id="texto01"> Posso digitar qualquer coisa </label>
+        </div>
+    </section>
+
+    <section class="exe" id="2">
+        <p><strong>Exercício 2</strong> 
+            Crie uma estrutura similar à do exercício anterior, isto é, um input com evento onblur e um label. 
+            <br> No evento deve ser chamada um função javascript que acrescente à tag label o valor digitado,
+            <br> ou seja, haverá concatenação dos valores apresentados em tela.</p>
+        <div>
+            <h3>Resolução</h3>
+
+            <input type="text" name="campo2" onblur="concatenaTexto(this);">
+            <label id="texto02"> O que eu digitei vai aparecer aqui  </label>
+
+        </div>
+    </section>
+
+    <section class="exe" id="3">
+        <p><strong>Exercício 3</strong> Faça o que se pede:
+        <ul class="list-alpha">
+            <li>Crie um elemento do tipo ComboBox (select) que conterá as opções: Escolha um estado; São Paulo;
+                Minas Gerais; Rio de Janeiro e Espírito Santo.</li>
+            <li>Crie um novo ComboBox que conterá a opção: Escolha uma cidade. Este elemento deve receber,
+                inicialmente, o estilo display: none para que não seja exibido na página.</li>
+            <li>Crie uma função que vai ser disparada no evento onchange do primeiro ComboBox criado (estados).
+                Caso a opção escolhida seja diferente da correspondente a “Escolha um estado”, o ComboBox criado
+                no item b deve ser apresentado. Caso contrário, ele deve ser ocultado.</li>
+        </ul>
+        </p>
+        <div>
+            <h3>Resolução</h3>
+
+            <select onchange="carregaCidade(this)">
+                <option value="">Escolha um estado</option>
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espírito Santo</option>
+            </select>
+
+            <select name="cidades" id="cidades" style="display: none;">
+                <option value="">Escolha uma cidade</option>
+            </select>
+            
+        </div>
+    </section>
+
+    <script>
+        function exportaTexto(texto) {
+            document.getElementById("texto01").innerHTML = texto.value;
+        }
+
+        function concatenaTexto(texto) {
+            document.getElementById("texto02").innerHTML += texto.value + " ";
+        }
+
+        function carregaCidade(texto) {
+            if (texto.value) { //""
+                document.getElementById("cidades").style.display = "inline";
+            }else {
+                document.getElementById("cidades").style.display = "none";
+            }
+        }
+
+    </script>
+
+    
+</body>
+</html>

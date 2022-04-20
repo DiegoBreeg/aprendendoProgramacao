@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <section class="exe" id="1">
+        <p><strong>Exercício 1</strong> Crie um elemento input do tipo texto e um elemento label. 
+            Ao elemento input deve
+            ser adicionado um evento denominado "onblur" <br> 
+            (disparado quando o foco do elemento é retirado) que chame uma função javascript que leia 
+            o valor contido no input e o coloque no elemento label.</p>
+        <div> 
+           <input type="text" name="campo1" onblur="exportaTexto(this);">
+           <label id="texto01"> Posso digitar qualquer coisa </label>
+        </div>
+    </section>
+
+    <section class="exe" id="2">
+        <p><strong>Exercício 2</strong> 
+            Crie uma estrutura similar à do exercício anterior, isto é, um input com evento onblur e um label. 
+            <br> No evento deve ser chamada um função javascript que acrescente à tag label o valor digitado,
+            <br> ou seja, haverá concatenação dos valores apresentados em tela.</p>
+        <div>
+            <h3>Resolução</h3>
+        </div>
+    </section>
+
+    <script>
+        function exportaTexto(texto) {
+            document.getElementById("texto01").innerHTML = texto.value;
+        }
+
+    </script>
+
+    
+</body>
+</html>

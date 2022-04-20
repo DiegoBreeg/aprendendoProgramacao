@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="titulo01"> Meu nome é Diego</h1>
+
+    <div class="minhadiv">1 </div>
+    <div class="minhadiv">2 </div>
+    <div class="minhadiv">3 </div>
+
+    <script>        
+        document.getElementsByClassName("minhadiv")[0].style.border = '1px solid'
+        document.querySelectorAll(".minhadiv")[1].style.border =  '1px solid'
+        document.querySelectorAll(".minhadiv")[2].style.border =  '1px solid'
+    </script>
+</body>
+</html>

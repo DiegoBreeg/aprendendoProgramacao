@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+        <p><strong>Exercício 1</strong> Crie um elemento input do tipo texto e um elemento label. Ao elemento input deve
+            ser adicionado um evento denominado "onblur" <br>
+            (disparado quando o foco do elemento é retirado) que chame uma função javascript que leia o valor contido no input e o coloque no elemento label.</p>
+        <div>
+            <form>
+                <input type="text" id="text">
+                <label id="label"> dentro do label</label>
+            </form>
+        </div>
+    
+    <script>
+        let label = document.querySelector('#label');
+        let text = document.querySelector('#text');
+        text.addEventListener('change', () => {
+            label.innerHTML = text.value
+
+        })
+    </script>
+    
+        <p><strong>Exercício 2</strong> 
+            Crie uma estrutura similar à do exercício anterior, isto é, um input com evento onblur e um label. 
+            <br> No evento deve ser chamada um função javascript que acrescente à tag label o valor digitado,
+            <br> ou seja, haverá concatenação dos valores apresentados em tela.</p>
+        <div>
+            <form>
+                <input type="text" id="text2">
+                <label id="label2"> dentro do label</label>
+            </form>
+        </div>
+    
+
+    <script>
+        let label2 = document.querySelector('#label2');
+        let text2 = document.querySelector('#text2');
+        text2.addEventListener('change', () => {
+            label2.innerHTML += ` ${text2.value}`
+        })
+
+    </script>
+
+
+<section class="exe" id="3">
+    <p><strong>Exercício 3</strong> Faça o que se pede:
+    <ul class="list-alpha">
+        <li>Crie um elemento do tipo ComboBox (select) que conterá as opções: Escolha um estado; São Paulo;
+
+            Minas Gerais; Rio de Ganeiro e Espírito Santo.</li>
+        <li>Crie um novo ComboBox que conterá a opção: Escolha uma cidade. Este elemento deve receber,
+
+            inicialmente, o estilo display: none para que não seja exibido na página.</li>
+        <li>Crie uma função que vai ser disparada no evento onchange do primeiro ComboBox criado (estados).
+
+            Caso a opção escolhida seja diferente da correspondente a “Escolha um estado”, o ComboBox criado
+
+            no item b deve ser apresentado. Caso contrário, ele deve ser ocultado.</li>
+    </ul>
+    </p>
+
+    <div>
+        <h3>Resolução</h3>
+        <label for='paoLanche'>Tipo de pão</label>
+        <select name='paoLanche' id='paoLanche'>
+            <option value='comum'>Pão Comum</option>
+            <option value='integral'>Pão Integral</option>
+            <option value='nozes'>Pão com Nozes</option>
+        </select>
+        <label for='recheioLanche'>Recheio</label>
+        <select name='recheioLanche' id='recheioLanche'>
+            <option value='presunto'>Presunto</option>
+            <option value='bacon'>Bacon</option>
+            <option value='queijo'>Queijo</option>    
+        </select>
+        <label for='molhoLanche'>Molho</label>
+        <select name='molhoLanche' id='molhoLanche'>
+            <option value='tomate'>Tomate</option>
+            <option value='ricota'>Ricota</option>
+            <option value='catupiry'>Catupiry</option>
+        </select>      
+
+    </div>
+
+</section>
+
+    
+</body>
+</html>

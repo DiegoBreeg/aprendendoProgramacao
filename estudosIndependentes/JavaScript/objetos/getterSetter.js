@@ -10,7 +10,7 @@
 
 const obj = {  
     name: 'diego',
-    
+
     get r() {return console.log(this.name.toUpperCase())},
     set 'r'(name) {this.name = name} //o nome da propriedade pode ser uma string
 }
@@ -46,13 +46,21 @@ class Pessoa {
     talk(){return console.log(this.name)}
 }
 let pessoa = new Pessoa('diego', 26, 'informações privilegiadas');
+pessoa._private = 'alterado'
 pessoa._private
 
 
 class Lista {
-    #names = []
-    get names() {return this.#names}
-    set names(name) {this.#names.push(name)}
+    #names = new Set()
+
+    get names() { return Array(...this.#names)}
+    set add(name) { this.#names.add(name)}
+    set delete(name) { this.#names.delete(name)}
 }
 const lista = new Lista();
-lista.names = 'diego'
+lista.add = 'pedra'
+lista.add = 'papel'
+lista.add = 'tesoura'
+console.log(lista.names)
+lista.delete = 'pedra'
+console.log(lista.names)

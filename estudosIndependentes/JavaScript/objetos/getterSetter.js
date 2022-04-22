@@ -53,8 +53,8 @@ pessoa._private
 class Lista {
     #names = new Set()
 
-    get names() { return Array(...this.#names)}
-    set add(name) { this.#names.add(name)}
+    get names() { return Array(...this.#names)} //a propriedade names tem o valor do retorno do get
+    set add(name) { this.#names.add(name)} //a propriedade add não tem valor, apenas executa um operação
     set delete(name) { this.#names.delete(name)}
 }
 const lista = new Lista();

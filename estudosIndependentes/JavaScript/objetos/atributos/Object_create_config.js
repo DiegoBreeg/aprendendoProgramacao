@@ -26,7 +26,7 @@ const pessoa = Object.create(proto, {
     age: {
         value: 26,
         writable: false,
-        enumerable: false,
+        enumerable: true,
         configurable: false
     }
 })

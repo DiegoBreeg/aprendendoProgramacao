@@ -12,10 +12,8 @@ function Constructor(name, age) {
         writable: false,
         configurable: true})
 
-    Object.defineProperty(this, 'changeName', {
-        value: function(newName) {
-            Object.defineProperty(this, 'name',{value: newName})
-            }
+    Object.defineProperty(Constructor.prototype, 'changeName', {
+        value: function(newName) {Object.defineProperty(this, 'name', {value: newName})}
         })
 }
 

@@ -12,7 +12,7 @@ Person.prototype.falaNome = function falaNome() {return `meu nome é ${this.name
 Person.prototype.falaIdade = function falaIdade() {return `minha idade é nome é ${this.age}`}
 
 
- //ao invés de usar Object.create() para copiar o prototype simplesmente dei um spread.
+ 
 CoolPerson.prototype = Object.create(Person.prototype);
 CoolPerson.prototype.falaLegal = function falaLegal() {return `Sou uma pessoa`}
 CoolPerson.prototype.constructor = CoolPerson;

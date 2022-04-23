@@ -7,5 +7,5 @@ Object.defineProperty(literal, 'name', {
     configurable: true
 })
 Object.defineProperty(literal, 'changeName', {
-    set: function(newName){Object.defineProperty(this, 'name', {value: newName})}
+    value: function(newName){Object.defineProperty(this, 'name', {value: newName})}
 })

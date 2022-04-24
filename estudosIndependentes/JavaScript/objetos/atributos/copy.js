@@ -1,13 +1,14 @@
-Object.defineProperty(Object.prototype, 'copy', {  
+Object.defineProperty(Object.prototype, 'copy',
+    {
     value:function copy(object) {
         const names = Object.getOwnPropertyNames(object)
-        names.map((ell, index) => {
+        names.map( ell => {
             if(ell in this) return;
             let descriptor = Object.getOwnPropertyDescriptor(object, ell)
             Object.defineProperty(this, ell, descriptor)
-        })    
-    }
-})
+            })    
+        }
+    })
 
 const obj = Object.defineProperties({}, {
     name: {value: 'diego', writable: true, enumerable: true, configurable: true},
